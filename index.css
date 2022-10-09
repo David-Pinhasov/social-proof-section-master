@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'League Spartan';
+    font-size: 15px;
+	box-sizing: border-box; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:befor, *after{box-sizing: inherit;}
+
+h1{
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	color: hsl(300, 43%, 22%);
+}
+
+.intro{
+	margin-bottom: 25px;
+}
+
+.intro p{
+	font-weight: 500;
+	color: hsl(303, 10%, 53%);
+}
+
+.stars-reviews span{
+	display: block;
+	margin-top: 5px;
+	
+}
+
+.stars-reviews{
+	margin-bottom: 25px;
+}
+
+.single-review{
+	margin-bottom: 15px;
+	padding: 10px 0px;
+	border-radius: 5px;
+	font-weight: 500;
+	background-color: hsl(300, 24%, 96%);
+}
+
+.cards{
+	text-align: left;	
+}
+
+.single-card{
+	margin-bottom: 15px;
+	padding: 30px;
+	border-radius: 5px;
+	height: 132px;
+	background-color: rgb(107, 41, 90);
+}
+
+.single-card:last-child{
+	margin-bottom: 0;
+}
+.single-card p{
+	color: white;
+}
+
+.profile-title{
+	display: flex;
+	align-items: center ;
+	margin-bottom: 20px;
+	color: white;;
+}
+
+.name span{
+	display: block;
+	color: hsl(333, 80%, 67%);
+}
+
+.name{
+	margin-left: 20px;
+}
+
+.profile-title img{
+	border-radius: 50%;
+	width: 15%;
+}
+
+.attribution{
+	position: relative;
+	top: 120px;
+}
+
+.attribution a{
+	text-decoration: none;
+	font-size: 17px;
+	color: #0000EE
+}
+
+@media(min-width: 320px){
+	main{
+		padding: 35px;
+		margin-top: 40px;
+	}
+	
+	body{
+		background-image: url(images/bg-pattern-top-mobile.svg), 
+						  url(images/bg-pattern-bottom-mobile.svg);
+    	background-position: left -24px top -5px, right -10px bottom -220px;
+		background-repeat: no-repeat;
+		background-size: auto, 1200px 600px;
+	}
+	
+}
+
+@media (min-width:800px){
+body{
+	background-image: url(images/bg-pattern-top-mobile.svg), 
+					  url(images/bg-pattern-bottom-mobile.svg);	
+	background-size: 700px, 1200px 500px;				  			
+}
+
+	main{
+		padding: 0;
+	}
+
+	.stars-reviews{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.single-review{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.single-card{
+		margin-bottom: 0;
+		/* margin-right: 50px; */
+		width: 20%;
+	}
+
+	.cards{
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+@media (min-width:1281px){
+	body{
+		background-image: url(/images/bg-pattern-top-desktop.svg),
+						  url(/images/bg-pattern-bottom-desktop.svg);
+		background-size: 700px, 1200px 600px;			  
+	}
+
+	main{
+		margin-top: 0;
+	}
+
+	.top{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.intro h1{
+		font-size: 3em;
+	}
+
+	.intro{
+		margin-right: 140px;
+	}
+
+	#p-top{
+		font-size: 1.2em;
+	}
+
+	.stars-reviews{
+		flex-direction: column;
+		margin-bottom: 0;
+		width: 520px;
+		align-items: center;
+		
+	}
+
+	.single-review span{
+		display: inline;
+		margin-left: 20px;
+	}
+
+	.single-review:last-child{
+		margin-bottom: 0;
+		align-self: flex-end;
+	}
+
+	.single-review:first-child{
+		align-self: flex-start;
+	}
+
+	.single-review{
+		padding: 15px 50px;
+	}
+
+	.single-review img{
+		padding: 0px 2px;
+	}
+
+	.intro{
+		width: 25%;
+		text-align: left;
+	}
+
+	.cards{
+		width: 80%;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		min-height: 30vh;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	.single-card{
+		margin-right: 60px;
+	}
+
+	.single-card:last-child{
+		margin-right: 0;
+		align-self: flex-end;
+	}
+
+	.single-card:first-child{
+		align-self: flex-start;
+	}
+}
