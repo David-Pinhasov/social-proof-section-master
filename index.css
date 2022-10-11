@@ -202,8 +202,8 @@ body{
 
 @media (min-width:1281px){
 	body{
-		background-image: url(/images/bg-pattern-top-desktop.svg),
-						  url(/images/bg-pattern-bottom-desktop.svg);
+		background-image: url(images/bg-pattern-top-desktop.svg),
+						  url(images/bg-pattern-bottom-desktop.svg);
 		background-size: 700px, 1200px 600px;			  
 	}
 
